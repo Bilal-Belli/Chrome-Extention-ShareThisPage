@@ -6,29 +6,16 @@ const PLATFORMS = [
     { name: 'Gmail', icon: 'fas fa-envelope' },
     { name: 'Facebook', icon: 'fab fa-facebook' },
     { name: 'X', icon: 'fab fa-twitter' },
-    { name: 'Instagram', icon: 'fab fa-instagram' },
     { name: 'LinkedIn', icon: 'fab fa-linkedin-in' },
     { name: 'Reddit', icon: 'fab fa-reddit-alien' },
-    { name: 'TikTok', icon: 'fab fa-tiktok' },
     { name: 'Snapchat', icon: 'fab fa-snapchat-ghost' },
     { name: 'Pinterest', icon: 'fab fa-pinterest' },
     { name: 'Tumblr', icon: 'fab fa-tumblr' },
     { name: 'Threads', icon: 'fab fa-threads' },
     { name: 'Bluesky', icon: 'fas fa-cloud-sun' },
     { name: 'Mastodon', icon: 'fab fa-mastodon' },
-    // Video
-    { name: 'YouTube', icon: 'fab fa-youtube' },
-    { name: 'Vimeo', icon: 'fab fa-vimeo-v' },
-    { name: 'Dailymotion', icon: 'fab fa-vimeo' },
-    { name: 'Twitch', icon: 'fab fa-twitch' },
-    { name: 'Utreon', icon: 'fas fa-video' },
-    { name: 'DTube', icon: 'fas fa-play-circle' },
-    { name: 'PeerTube', icon: 'fas fa-share-alt' },
-    { name: 'Rumble', icon: 'fas fa-bolt' },
-    { name: 'TED', icon: 'fas fa-chalkboard' },
     // Social / Russian / Asian
     { name: 'VKontakte', icon: 'fab fa-vk' },
-    { name: 'WeChat', icon: 'fab fa-weixin' },
     // Messaging
     { name: 'WhatsApp', icon: 'fab fa-whatsapp' },
     { name: 'Telegram', icon: 'fab fa-telegram-plane' },
@@ -37,48 +24,7 @@ const PLATFORMS = [
     { name: 'Signal', icon: 'fas fa-comment-dots' },
     { name: 'LINE', icon: 'fab fa-line' },
     { name: 'Viber', icon: 'fab fa-viber' },
-    // Cloud storage
-    { name: 'Google Drive', icon: 'fab fa-google-drive' },
-    { name: 'Microsoft OneDrive', icon: 'fab fa-microsoft' },
-    { name: 'Dropbox', icon: 'fab fa-dropbox' },
-    { name: 'Box', icon: 'fas fa-box' },
-    { name: 'iCloud Drive', icon: 'fas fa-cloud' },
-    { name: 'MediaFire', icon: 'fas fa-fire' },
-    { name: 'WeTransfer', icon: 'fas fa-exchange-alt' },
-    { name: 'Filemail', icon: 'fas fa-mail-bulk' },
-    { name: 'Jumpshare', icon: 'fas fa-share-square' },
-    { name: 'Razuna', icon: 'fas fa-database' },
-    { name: 'ShareFile', icon: 'fas fa-file-alt' },
-    { name: 'Egnyte', icon: 'fas fa-server' },
-    // Docs / publishing
-    { name: 'SlideShare', icon: 'fab fa-slideshare' },
-    { name: 'Scribd', icon: 'fas fa-file-pdf' },
-    { name: 'Google Docs', icon: 'fas fa-file-alt' },
-    { name: 'Google Sites', icon: 'fas fa-globe' },
-    { name: 'GitBook', icon: 'fab fa-git-alt' },
-    { name: 'Wikibooks', icon: 'fas fa-book-open' },
-    { name: 'Bookdown', icon: 'fas fa-book' },
-    { name: 'Jupyter Notebooks', icon: 'fas fa-code' },
-    { name: 'Scalar', icon: 'fas fa-sitemap' },
-    { name: 'Mermaid', icon: 'fas fa-code-branch' },
-    { name: 'Diff Viewer', icon: 'fas fa-code' },
-    { name: 'Notepad Tab', icon: 'fas fa-sticky-note' },
-    { name: 'IBAN Advertiser', icon: 'fas fa-ad' },
-    // Reviews / UGC
-    { name: 'Yotpo', icon: 'fas fa-star' },
-    { name: 'Bazaarvoice', icon: 'fas fa-comment' },
-    { name: 'Flowbox', icon: 'fas fa-images' },
-    { name: 'Tint', icon: 'fas fa-palette' },
-    { name: 'Emplifi', icon: 'fas fa-chart-line' },
-    { name: 'Nosto', icon: 'fas fa-tag' },
-    { name: 'Taggbox', icon: 'fas fa-hashtag' },
-    { name: 'CrowdRiff', icon: 'fas fa-camera' },
-    { name: 'Pixlee', icon: 'fas fa-image' },
-    { name: 'PowerReviews', icon: 'fas fa-star-half-alt' },
-    { name: 'Billo', icon: 'fas fa-video' },
-    { name: 'Trend.io', icon: 'fas fa-chart-simple' },
     // Blog / read
-    { name: 'Medium', icon: 'fab fa-medium' },
     { name: 'Blogger', icon: 'fab fa-blogger' },
     { name: 'WordPress', icon: 'fab fa-wordpress' },
     { name: 'Pocket', icon: 'fab fa-get-pocket' },
@@ -91,28 +37,60 @@ const PLATFORMS = [
     { name: 'Plurk', icon: 'fas fa-comment' },
     { name: 'Weibo', icon: 'fab fa-weibo' },
     // Dev / tools
-    { name: 'GitHub', icon: 'fab fa-github' },
-    { name: 'TS Playground', icon: 'fas fa-code' },
-    { name: 'Carbon', icon: 'fas fa-code' },
-    { name: 'IconKitchen', icon: 'fas fa-icons' },
-    { name: 'keygen', icon: 'fas fa-key' },
-    { name: 'YouTube Card Generator', icon: 'fab fa-youtube' },
     { name: 'Hatena Bookmark', icon: 'fas fa-bookmark' },
     // Social media management
     { name: 'Buffer', icon: 'fas fa-layer-group' },
-    { name: 'Sprout Social', icon: 'fas fa-seedling' },
-    // Education
-    { name: 'Canvas Commons', icon: 'fas fa-paint-roller' },
-    { name: 'OER Commons Open Author', icon: 'fas fa-university' },
-    { name: 'Pressbooks', icon: 'fas fa-book' },
     // Productivity
     { name: 'Evernote', icon: 'fab fa-evernote' },
     { name: 'Trello', icon: 'fab fa-trello' },
     { name: 'Slack', icon: 'fab fa-slack' },
-    { name: 'Character.AI Feed', icon: 'fas fa-robot' },
-    { name: 'FanFiction.net', icon: 'fas fa-pen-fancy' },
     { name: 'Feedly', icon: 'fas fa-rss' },
 ];
+
+// ==========================================
+// SHARE URL GENERATORS
+// ==========================================
+const SHARE_URLS = {
+    // === SOCIAL & MESSAGING ===
+    'Gmail': (url, title) => `https://mail.google.com/mail/?view=cm&fs=1&to=&su=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`,
+    'Facebook': (url) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+    'X': (url, title) => `https://x.com/intent/post?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
+    'LinkedIn': (url, title) => `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+    'Reddit': (url, title) => `https://www.reddit.com/submit?title=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
+    'Pinterest': (url, title) => `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(title)}`,
+    'Tumblr': (url, title) => `https://www.tumblr.com/share?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Threads': (url) => `https://www.threads.net/intent/post?text=${encodeURIComponent(url)}`,
+    'Bluesky': (url, title) => `https://bsky.app/intent/compose?text=${encodeURIComponent(title + ' ' + url)}`,
+    'Mastodon': (url, title) => `https://mastodon.social/share?text=${encodeURIComponent(title + ' ' + url)}`,
+    'VKontakte': (url, title) => `https://vk.com/share.php?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'WhatsApp': (url, title) => `https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`,
+    'Telegram': (url, title) => `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+    'Messenger': (url) => `https://www.facebook.com/dialog/send?link=${encodeURIComponent(url)}&app_id=YOUR_APP_ID&redirect_uri=${encodeURIComponent(url)}`, // Requires a FB App ID to work reliably
+    'Discord': (url, title) => `https://discord.com/channels/@me?text=${encodeURIComponent(title + ' ' + url)}`,
+    'Signal': (url, title) => `https://signal.me/#p?text=${encodeURIComponent(title + ' ' + url)}`,
+    'LINE': (url, title) => `https://lineit.line.me/share/ui?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+    'Viber': (url, title) => `viber://forward?text=${encodeURIComponent(title + ' ' + url)}`,
+    'Weibo': (url, title) => `https://service.weibo.com/share/share.php?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Slack': (url, title) => `https://slack.com/share?text=${encodeURIComponent(title + ' ' + url)}`,
+
+    // === COMPLETED MISSING ONES (That have web intents) ===
+    'Snapchat': (url) => `https://www.snapchat.com/share?url=${encodeURIComponent(url)}`, // Snapchat now has a basic web share utility!
+    'Instapaper': (url, title) => `https://www.instapaper.com/hello2?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Raindrop.io': (url, title) => `https://raindrop.io/add?link=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Refind': (url) => `https://refind.com/links/new?url=${encodeURIComponent(url)}`,
+    'Trello': (url, title) => `https://trello.com/add-card?source=web&name=${encodeURIComponent(title)}&desc=${encodeURIComponent(url)}`,
+    'Hacker News': (url, title) => `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(url)}&t=${encodeURIComponent(title)}`,
+    'Evernote': (url, title) => `https://www.evernote.com/clip.action?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Feedly': (url, title) => `https://feedly.com/i/subscription/feed/${encodeURIComponent(url)}`,
+    'Blogger': (url, title) => `https://www.blogger.com/blog_this.pyra?t=&u=${encodeURIComponent(url)}&n=${encodeURIComponent(title)}`,
+    'WordPress': (url, title) => `https://wordpress.com/press-this.php?u=${encodeURIComponent(url)}&t=${encodeURIComponent(title)}`,
+    'Pocket': (url, title) => `https://getpocket.com/save?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Flipboard': (url, title) => `https://share.flipboard.com/bookmarklet/popout?v=2&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Digg': (url, title) => `https://digg.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Plurk': (url, title) => `https://www.plurk.com/?content=${encodeURIComponent(url + ' ' + title)}`,
+    'Hatena Bookmark': (url, title) => `https://b.hatena.ne.jp/add?mode=confirm&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    'Buffer': (url, title) => `https://buffer.com/add?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
+};
 
 // ==========================================
 // DOM REFERENCES
@@ -286,30 +264,39 @@ async function handleShare(platform) {
             return;
         }
 
-        const shareText = `${currentTab.title} - ${currentTab.url}`;
+        const url = currentTab.url;
+        const title = currentTab.title || 'Shared Page';
 
-        // Try to copy to clipboard
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            await navigator.clipboard.writeText(shareText);
+        // Check if we have a direct share URL
+        const shareUrl = SHARE_URLS[platform] ? SHARE_URLS[platform](url, title) : null;
 
-            // Notify background
-            if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
-                try {
-                    chrome.runtime.sendMessage({
-                        type: 'share',
-                        platform: platform,
-                        url: currentTab.url,
-                        title: currentTab.title
-                    });
-                } catch (e) {
-                    console.log('Background message failed:', e);
-                }
-            }
-
-            showNotification(`✅ Copied! Ready to share on ${platform}`);
+        if (shareUrl) {
+            // Ouvrir dans un nouvel onglet
+            window.open(shareUrl, '_blank', 'noopener,noreferrer');
+            showNotification(`✅ Opening ${platform}...`);
         } else {
-            // Fallback
-            showNotification(`📋 Share on ${platform}:\n${shareText}`);
+            // Fallback: copier le texte
+            const shareText = `${title} - ${url}`;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(shareText);
+                showNotification(`📋 Copied! Share manually on ${platform}`);
+            } else {
+                showNotification(`📋 Share on ${platform}:\n${shareText}`);
+            }
+        }
+
+        // Notify background (optionnel, pour tracking)
+        if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
+            try {
+                chrome.runtime.sendMessage({
+                    type: 'share',
+                    platform: platform,
+                    url: url,
+                    title: title
+                });
+            } catch (e) {
+                console.log('Background message failed:', e);
+            }
         }
     } catch (error) {
         console.error('Share error:', error);
