@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Share This Page Pro</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="panel.css">
+    </head>
+
+    <body>
+        <div class="app-header">
+            <i class="fas fa-share-alt"></i>
+            <h1>Share This Page Pro</h1>
+            <small>v1.0</small>
+        </div>
+
+        <div class="search-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search platforms... e.g. Twitter, Gmail">
+        </div>
+
+        <div id="pageInfo" class="page-info"></div>
+
+        <div id="platformContainer" class="platform-grid"></div>
+
+        <footer class="app-footer">
+            <button class="footer-link" id="aboutBtn"><i class="fas fa-info-circle"></i> About</button>
+            <span class="footer-dot">•</span>
+            <button class="footer-link" id="privacyBtn"><i class="fas fa-shield-alt"></i> Privacy & Terms</button>
+            <span class="footer-dot">•</span>
+            <button class="footer-link highlight" id="supportBtn"><i class="fas fa-heart"></i> Support Me</button>
+        </footer>
+
+        <!-- About Modal -->
+        <div id="aboutModal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-info-circle"></i> About</h2>
+                    <button class="modal-close" id="closeAbout">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="about-logo"><i class="fas fa-share-alt"></i></p>
+                    <h3>Share This Page Pro</h3>
+                    <p class="version">Version 1.0.0</p>
+                    <p class="desc">Share any web page across 100+ platforms instantly. Designed to be fast, beautiful, and completely private.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>100% Private</strong>
+                                <p>No data collection, no trackers, no accounts needed.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <strong>Instant Search</strong>
+                                <p>Find your favorite platforms in milliseconds.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-layer-group"></i>
+                            <div>
+                                <strong>100+ Platforms</strong>
+                                <p>From messaging apps to cloud storage and developer tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy & Terms Modal -->
+        <div id="privacyModal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-shield-alt"></i> Privacy & Terms</h2>
+                    <button class="modal-close" id="closePrivacy">&times;</button>
+                </div>
+                <div class="modal-body text-left">
+                    <h4>Privacy Policy</h4>
+                    <p>Share This Page Pro operates entirely locally. We do not collect, store, or transmit any data. Your browsing history, URL shares, and searches never leave your device.</p>
+                    
+                    <h4>Permissions Used</h4>
+                    <ul>
+                        <li><strong>activeTab:</strong> To retrieve the URL and title of the active tab when you click to share it.</li>
+                        <li><strong>clipboardWrite:</strong> To copy the shareable link and title to your clipboard.</li>
+                        <li><strong>storage:</strong> To save your settings and preferences locally.</li>
+                    </ul>
+
+                    <h4>Terms of Service</h4>
+                    <p>This extension is provided "as is" without warranty. Use of this extension is at your own risk. All third-party platform names and logos are trademarks of their respective owners.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Me Modal -->
+        <div id="supportModal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-heart"></i> Support Me</h2>
+                    <button class="modal-close" id="closeSupport">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="support-heart"><i class="fas fa-heart"></i></div>
+                    <h3>Support My Work</h3>
+                    <p class="support-text">Hi! I maintain and update this extension for free. If it helps you save time, please consider supporting me to keep the project alive!</p>
+                    
+                    <div class="support-options">
+                        <a href="https://www.buymeacoffee.com" target="_blank" class="support-btn bmac">
+                            <i class="fas fa-coffee"></i> Buy Me a Coffee
+                        </a>
+                        <a href="https://ko-fi.com" target="_blank" class="support-btn kofi">
+                            <i class="fas fa-heart"></i> Support on Ko-fi
+                        </a>
+                        <a href="https://paypal.me" target="_blank" class="support-btn paypal">
+                            <i class="fab fa-paypal"></i> PayPal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="panel.js" defer></script>
+    </body>
+</html>
